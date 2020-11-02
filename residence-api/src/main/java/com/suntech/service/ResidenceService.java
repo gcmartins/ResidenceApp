@@ -5,7 +5,9 @@ import com.suntech.repository.ResidenceRepository;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
+import javax.persistence.PersistenceException;
 import java.util.List;
+import java.util.Optional;
 
 @Singleton
 public class ResidenceService {
@@ -26,6 +28,11 @@ public class ResidenceService {
     }
 
     public void deleteResidenceById(Long id){
-       residenceRepository.deleteById(id);
+        Optional<Residence> optionalResidence = residenceRepository.findById(id);
+        if (optionalResidence.isPresent()){
+            residenceRepository.deleteById(id);
+        } else {
+            throw new PersistenceException();
+        }
     }
 }
