@@ -9,6 +9,26 @@ services:
       MYSQL_ROOT_PASSWORD: residenceApiSecret
       MYSQL_DATABASE: residence-api-db
       MYSQL_ROOT_HOST: '%'
+    restart: always
     ports:
       - 3306:3306
+
+  residence-api:
+    container_name: residence-api
+    image: residence-api
+    depends_on:
+      - residence-api-db
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    environment: 
+      DB_HOST: residence-api-db
+    restart: always
+    ports:
+      - 8080:8080
+
+networks:
+  default:
+    external:
+      name: residence-api-net
       

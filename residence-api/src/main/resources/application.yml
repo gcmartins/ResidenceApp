@@ -11,7 +11,7 @@ micronaut:
         mapping: /swagger-ui/**
 datasources:
   default:
-    url: jdbc:mysql://localhost:3306/residence-api-db
+    url: 'jdbc:mysql://${db-host}:3306/residence-api-db'
     driverClassName: com.mysql.cj.jdbc.Driver
     username: root
     password: 'residenceApiSecret'

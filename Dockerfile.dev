@@ -1,0 +1,5 @@
+FROM openjdk:11
+WORKDIR /root/
+COPY ./residence-api/ /root/
+ENV PATH="/root:${PATH}"
+CMD ./gradlew run
