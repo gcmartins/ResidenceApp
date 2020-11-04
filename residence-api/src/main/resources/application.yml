@@ -9,6 +9,14 @@ micronaut:
       swagger-ui:
         paths: classpath:META-INF/swagger/views/swagger-ui
         mapping: /swagger-ui/**
+  server:
+    cors:
+      enabled: true
+      configurations:
+        web:
+          allowedOrigins:
+            - http://localhost:3000
+
 datasources:
   default:
     url: 'jdbc:mysql://${db-host}:3306/residence-api-db'
