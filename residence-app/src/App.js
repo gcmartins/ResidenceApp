@@ -1,12 +1,11 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import ResidenceFormPage from './pages/ResidenceFormPage'
-import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import ResidencePage from './pages/ResidencePage';
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={ResidenceFormPage} />
+        <Route exact path="/" component={ResidencePage} />
       </Switch>
     </BrowserRouter>
 
