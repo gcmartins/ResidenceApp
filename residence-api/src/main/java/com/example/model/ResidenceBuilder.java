@@ -1,6 +1,6 @@
-package com.suntech.model;
+package com.example.model;
 
-import com.suntech.dto.ResidenceDTO;
+import com.example.dto.ResidenceDTO;
 
 public class ResidenceBuilder {
     public static Residence createResidence(ResidenceDTO residenceDTO){

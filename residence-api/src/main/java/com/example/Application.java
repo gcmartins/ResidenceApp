@@ -1,4 +1,4 @@
-package com.suntech;
+package com.example;
 
 import io.micronaut.runtime.Micronaut;
 import io.swagger.v3.oas.annotations.*;

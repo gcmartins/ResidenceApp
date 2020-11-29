@@ -1,4 +1,4 @@
-package com.suntech;
+package com.example;
 
 import io.micronaut.runtime.EmbeddedApplication;
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;

@@ -1,7 +1,7 @@
-package com.suntech.service;
+package com.example.service;
 
-import com.suntech.model.Residence;
-import com.suntech.repository.ResidenceRepository;
+import com.example.model.Residence;
+import com.example.repository.ResidenceRepository;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

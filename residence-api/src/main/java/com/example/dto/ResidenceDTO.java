@@ -1,4 +1,4 @@
-package com.suntech.dto;
+package com.example.dto;
 
 public class ResidenceDTO {
     private Integer cep;

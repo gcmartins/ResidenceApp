@@ -1,9 +1,9 @@
-package com.suntech.controller;
+package com.example.controller;
 
-import com.suntech.dto.ResidenceDTO;
-import com.suntech.model.Residence;
-import com.suntech.model.ResidenceBuilder;
-import com.suntech.service.ResidenceService;
+import com.example.dto.ResidenceDTO;
+import com.example.model.Residence;
+import com.example.model.ResidenceBuilder;
+import com.example.service.ResidenceService;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.annotation.*;
 

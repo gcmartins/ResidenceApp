@@ -1,6 +1,6 @@
-package com.suntech.repository;
+package com.example.repository;
 
-import com.suntech.model.Residence;
+import com.example.model.Residence;
 import io.micronaut.data.annotation.Repository;
 import io.micronaut.data.repository.CrudRepository;
 
