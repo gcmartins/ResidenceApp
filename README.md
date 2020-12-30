@@ -1,4 +1,5 @@
 # ResidenceApp
+Simple application using Micronaut framework (Java) and React (Javascript) as backend and frontend, respectively. The backend is a REST application that handles persistence of residence locations, coordinates (latitude and longitude) and number of residents. The frontend handles the registration of residences and shows a color map acording with number of residents.
 
 ## Running the project
 First create the network, running: 
